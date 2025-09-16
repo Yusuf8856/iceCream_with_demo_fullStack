@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}Services{% endblock title %}
+
+{% block style %}
+<style>
+    body {
+        background-color: #fff8f0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h2 {
+        color: #ff6f91;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 25px;
+        margin-bottom: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+    }
+
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(255, 111, 145, 0.4);
+    }
+
+    .service-icon {
+        font-size: 40px;
+        color: #ff6f91;
+        margin-bottom: 15px;
+    }
+
+    .service-title {
+        color: #ff6f91;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .service-description {
+        color: #444;
+        font-size: 15px;
+    }
+</style>
+{% endblock style %}
+
+{% block body %}
+<div class="container mt-5">
+    <h2 class="text-center">Our Sweet Services</h2>
+
+    <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">🚚</div>
+                <div class="service-title">Ice Cream Home Delivery</div>
+                <p class="service-description">
+                    Enjoy your favorite ice creams from the comfort of your home. Quick delivery within Bangalore!
+                </p>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">🍨</div>
+                <div class="service-title">Custom Flavors</div>
+                <p class="service-description">
+                    Want something unique? We create special flavors just for your taste and occasion.
+                </p>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">🎉</div>
+                <div class="service-title">Event Catering</div>
+                <p class="service-description">
+                    Make your events sweeter with live counters and custom ice cream servings.
+                </p>
+            </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">🎁</div>
+                <div class="service-title">Gift Packs & Hampers</div>
+                <p class="service-description">
+                    Surprise loved ones with beautiful, personalized ice cream gift packs.
+                </p>
+            </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">🍧</div>
+                <div class="service-title">Premium Dessert Range</div>
+                <p class="service-description">
+                    Explore premium waffles, sundaes, frozen yogurts and more.
+                </p>
+            </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">📦</div>
+                <div class="service-title">Bulk Orders</div>
+                <p class="service-description">
+                    Need more? Order bulk quantities for parties, weddings or corporate events.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

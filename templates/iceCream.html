@@ -1,0 +1,281 @@
+{% extends "base.html" %} {% block title %}Ice Creams{% endblock title %}
+{%block style %}{% load static %}
+<style>
+  body {
+    background-color: hsla(261, 78%, 73%, 0.776);
+    font-family: "Poppins", sans-serif;
+  }
+  h2 {
+    color: #ead596;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 3rem;
+  }
+  .icecream-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .icecream-card:hover {
+    transform: scale(1.05);
+  }
+  .icecream-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .icecream-details {
+    padding: 15px;
+    text-align: center;
+  }
+  .icecream-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9800;
+    margin-bottom: 10px;
+  }
+  .icecream-price {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  .order-btn {
+    background: #ff9800;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .order-btn:hover {
+    background: #e68900;
+  }
+  .testimonial {
+    background: #ffebf0;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+  }
+</style>
+{% endblock style %} {% block body %}
+<div class="container mt-5">
+  <h2 class="text-center">Our Ice Cream Specials</h2>
+
+  <div class="row">
+    <!-- Ice Cream 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/chocolate.jpeg' %}"
+          class="icecream-img" alt="Chocolate"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Chocolate</div>
+          <div class="icecream-price">₹80</div>
+          <a href="/contact/?item=Chocolate Ice Cream" class="order-btn"
+            >Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/vanilla.jpeg' %}"
+          class="icecream-img" alt="Vanilla"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Vanilla</div>
+          <div class="icecream-price">₹70</div>
+          <a href="/contact/?item=Vanilla Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/strawberry.jpeg' %}"
+          class="icecream-img" alt="Strawberry"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Strawberry</div>
+          <div class="icecream-price">₹85</div>
+          <a href="/contact/?item=Strawberry Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 4 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/mango.jpeg' %}"
+          class="icecream-img" alt="Mango"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Mango</div>
+          <div class="icecream-price">₹75</div>
+          <a href="/contact/?item=Mango Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 5 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/butterscotch.jpeg' %}"
+          class="icecream-img" alt="butterscotch"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Butterscotch</div>
+          <div class="icecream-price">₹90</div>
+          <a href="/contact/?item=Butterscotch Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 6 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/blackcurrant.jpeg' %}"
+          class="icecream-img" alt="blackcurrant"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Blackcurrant</div>
+          <div class="icecream-price">₹95</div>
+          <a href="/contact/?item=Blackcurrant Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 7 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/coffee.jpeg' %}"
+          class="icecream-img" alt="coffee"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Coffee</div>
+          <div class="icecream-price">₹100</div>
+          <a href="/contact/?item=Coffee Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 8 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/pistachio.jpeg' %}"
+          class="icecream-img" alt="pistachio"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Pistachio</div>
+          <div class="icecream-price">₹110</div>
+          <a href="/contact/?item=Pistachio Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 9 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/kulfi.jpeg' %}"
+          class="icecream-img" alt="kulfi"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Kulfi</div>
+          <div class="icecream-price">₹120</div>
+          <a href="/contact/?item=Kulfi Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 10 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/oreo.jpeg' %}"
+          class="icecream-img" alt="oreo"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Oreo Crunch</div>
+          <div class="icecream-price">₹130</div>
+          <a href="/contact/?item=Oreo Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 11 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/brownie.jpeg' %}"
+          class="icecream-img" alt="brownie"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Brownie Fudge</div>
+          <div class="icecream-price">₹140</div>
+          <a href="/contact/?item=Brownie Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream 12 -->
+    <div class="col-md-3 mb-4">
+      <div class="icecream-card">
+        <img
+          src="{% static 'iceCream/mint.jpeg' %}"
+          class="icecream-img" alt="mint"
+        />
+        <div class="icecream-details">
+          <div class="icecream-title">Mint Choco</div>
+          <div class="icecream-price">₹150</div>
+          <a href="/contact/?item=Mint Chocolate Ice Cream" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial -->
+  <div class="testimonial text-center">
+    <h4>💖 What Our Customers Say</h4>
+    <p>
+      "The Chocolate Overload cake was the highlight of my birthday party! Rich,
+      creamy, and absolutely delicious. Best ice cream cakes in town!"
+    </p>
+    <strong>- A Happy Customer</strong>
+  </div>
+</div>
+  </div>
+</div>
+{% endblock body %}

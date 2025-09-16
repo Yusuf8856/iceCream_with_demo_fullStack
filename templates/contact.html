@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style>
+    body {
+        background-color: #fff8f0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h2, h4, h5 {
+        color: #ff6f91;
+        font-weight: bold;
+    }
+
+    .btn-primary {
+        background-color: #ff6f91;
+        border: none;
+        font-weight: bold;
+    }
+
+    .btn-primary:hover {
+        background-color: #ff4e78;
+    }
+
+    .form-label {
+        color: #333;
+    }
+
+    .card-title {
+        color: #ff6f91;
+    }
+
+    iframe {
+        border-radius: 15px;
+    }
+</style>
+{% endblock style %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Contact Us</h2>
+
+    <!-- Contact Form -->
+    <form method="post" action="/contact/" class="p-4 border rounded bg-light shadow">
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="number" id="phone" name="phone" class="form-control" placeholder="Enter your number" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="desc" class="form-label">Message:</label>
+            <textarea id="desc" name="desc" rows="4" class="form-control" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+    <!-- Contact Info Section -->
+    <div class="mt-5">
+        <h4 class="mb-4">Our Contact Details</h4>
+        <div class="row">
+
+            <!-- Contact Details -->
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Location</h5>
+                        <p class="card-text">123 Main Street,<br> Bangalore, Karnataka, 560068, India</p>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Phone</h5>
+                        <p class="card-text">+91 70500 28588</p>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text">yusufali2235@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Embedded Google Map -->
+            <div class="col-md-6">
+                <h5 class="mb-3">Find Us on Google Maps</h5>
+                <div class="ratio ratio-4x3">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62257.21866323294!2d77.55521442588724!3d12.971598799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15ec9d12d5db%3A0x65ef63ff0a658ad5!2sAl%20Ameen%20Institute%20of%20Information%20Sciences!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        allowfullscreen 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,265 @@
+{% extends "base.html" %} {% block title %}Softy Specials{% endblock title %}
+{%block style %}{% load static %}
+<style>
+  body {
+    background-color: hsla(69, 68%, 67%, 0.776);
+    font-family: "Poppins", sans-serif;
+  }
+  h2 {
+    color: #ef5cef;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 3rem;
+  }
+  .softy-card {
+    background-color: #476bae;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .softy-card:hover {
+    transform: scale(1.05);
+  }
+  .softy-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .softy-details {
+    padding: 15px;
+    text-align: center;
+  }
+  .softy-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #030003;
+    margin-bottom: 10px;
+  }
+  .softy-price {
+    font-size: 20px;
+    color: #022813;
+    margin-bottom: 15px;
+  }
+  .order-btn {
+    background: #9c27b0;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .order-btn:hover {
+    background: #160120;
+  }
+  .testimonial {
+    background: #ffebf0;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+  }
+</style>
+{% endblock style %} {% block body %}
+<div class="container mt-5">
+  <h2 class="text-center">Softy Specials</h2>
+
+  <div class="row">
+    <!-- Softy 1 -->
+<div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/vanila.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Vanilla Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Vanilla Softy</div>
+          <div class="softy-price">₹60</div>
+          <a href="/contact/?item=Chocolate Softy" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/chocolate.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Chocolate Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Chocolate Softy</div>
+          <div class="softy-price">₹70</div>
+          <a href="/contact/?item=Chocolate Softy" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/stawberry.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Strawberry Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Strawberry Softy</div>
+          <div class="softy-price">₹65</div>
+          <a href="/contact/?item=Strawberry Softy" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 4 -->
+    <div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/mango.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Mango Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Mango Softy</div>
+          <div class="softy-price">₹75</div>
+          <a href="/contact/?item=Mango Softy" class="order-btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 5 -->
+    <div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/butterscothch.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Butterscotch Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Butterscotch Softy</div>
+          <div class="softy-price">₹80</div>
+          <a href="/contact/?item=Butterscotch Softy" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 6 -->
+    <div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/caramel.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Caramel Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Caramel Softy</div>
+          <div class="softy-price">₹85</div>
+          <a href="/contact/?item=Caramel Softy" class="order-btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 7 -->
+    <div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/mint.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Mint Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Mint Softy</div>
+          <div class="softy-price">₹70</div>
+          <a href="/contact/?item=Mint Softy" class="order-btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 8 -->
+    <div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/coffe.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Coffee Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Coffee Softy</div>
+          <div class="softy-price">₹90</div>
+          <a href="/contact/?item=Coffee Softy" class="order-btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 9 -->
+    <div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/oreo.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Oreo Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Oreo Softy</div>
+          <div class="softy-price">₹95</div>
+          <a href="/contact/?item=Oreo Softy" class="order-btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 10 -->
+    <div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/kulfi.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Kulfi Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Kulfi Softy</div>
+          <div class="softy-price">₹100</div>
+          <a href="/contact/?item=Kulfi Softy" class="order-btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 11 -->
+    <div class="col-md-3 mb-4">
+      <div class="softy-card">
+        <img
+          src="{% static 'softImages/blueberry.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Blueberry Softy"
+        />
+        <div class="softy-details">
+          <div class="softy-title">Blueberry Softy</div>
+          <div class="softy-price">₹110</div>
+          <a href="/contact/?item=Blueberry Softy" class="order-btn"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Softy 12 -->
+    <div class="col-md-3 mb-4"></a>
+        <div class="softy-card">
+    <img src="{% static 'softImages/vanila1.jpeg' %}" style="height: 250px;"
+          class="softy-img" alt="Vanilla Softy">
+    <div class="softy-details">
+        <div class="softy-title">Vanilla Softy</div>
+        <div class="softy-price">₹60</div>
+        <a href="/contact/?item=Blueberry Softy" class="order-btn"
+            >Order Now</a>
+    </div>
+</div>
+  </div>
+  <!-- Testimonial -->
+  <div class="testimonial text-center">
+    <h4>💖 What Our Customers Say</h4>
+    <p>
+      "The Chocolate Overload cake was the highlight of my birthday party! Rich,
+      creamy, and absolutely delicious. Best ice cream cakes in town!"
+    </p>
+    <strong>- A Happy Customer</strong>
+  </div>
+</div>
+{% endblock body %}

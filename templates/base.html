@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock title %} Yusuf Demo Django</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    {% block style %}{% endblock style %}
+    <style>
+      .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 70px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px #999;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+  }
+  .whatsapp-float:hover {
+      background-color: #20b858;
+      transform: scale(1.1);
+  }
+    </style>
+
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Yusuf Demo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Our Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/cake">Cake</a></li>
+            <li><a class="dropdown-item" href="/softy">Softy</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/iceCream">Ice Creme</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Us</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-success alert-dismissible fade show m-3" role="alert">
+      {{ message }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  {% endfor %}
+{% endif %}
+
+
+
+{% block body %}{% endblock body %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<footer class="text-light mt-5" style="background-color: #000301ff;">
+    <div class="container py-5">
+        <div class="row">
+            <!-- Logo + Contact -->
+            <div class="col-md-4 mb-4">
+                <img src="/static/logo.jpeg" alt="Logo" style="height: 80px;">
+                <div class="mt-3">
+                    <a href="https://www.instagram.com" class="me-2" target="_blank"><i class="fab fa-instagram fa-lg text-light bg-light rounded-circle p-2" style="color:#4a1e0d;"></i></a>
+                    <a href="https://www.facebook.com" class="me-2" target="_blank"><i class="fab fa-facebook-f fa-lg text-light bg-light rounded-circle p-2" style="color:#4a1e0d;" ></i></a>
+                </div>
+                <div class="mt-3">
+    <p class="mb-2">
+        <i class="fas fa-phone-alt me-2 text-white"></i> 
+        <a href="tel:+917050028588" class="text-white text-decoration-none">+91 70500 28588</a>
+    </p>
+    <p>
+  <i class="fas fa-envelope me-2 text-white"></i>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yusufali2235@gmail.com&su=Ice%20Cream%20Order&body=Hello%20Yusuf,%20I%20want%20to%20order..."
+     target="_blank" class="text-white">
+     customercare@yusuficecream.com
+  </a>
+</p>
+
+    <p class="mb-0">
+        <i class="fab fa-whatsapp me-2 text-success"></i> 
+        <a href="https://wa.me/917050028588?text=Hello%20Yusuf%20Ice%20Cream!%20I%20would%20like%20to%20order." 
+           target="_blank" class="text-white text-decoration-none">
+           Chat on WhatsApp
+        </a>
+    </p>
+</div>
+
+
+            </div>
+
+            <!-- NIC Story -->
+            <div class="col-md-2 mb-4">
+                <h5>Our Story</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">NIC Talks</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Blogs</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Videos</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Press</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="col-md-3 mb-4">
+                <h5>Products</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/cake" class="text-light text-decoration-none">Cake</a></li>
+                    <li><a href="/softy" class="text-light text-decoration-none">Softy</a></li>
+                    <li><a href="/icecream" class="text-light text-decoration-none">Ice Cream</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">No Added Sugar</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/about/" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="/services/" class="text-light text-decoration-none">Our Services</a></li>
+                    <li><a href="/contact/" class="text-light text-decoration-none">Contact</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="border-light" />
+
+        <div class="d-flex justify-content-between align-items-center small text-muted">
+            <div>© 2025 All Rights Reserved by Yusuf's Ice Cream 🍨</div>
+            <div class="text-end pe-2">
+                <span style="
+                    display: inline-block;
+                    background-color: #fff;
+                    color: #18052cff;
+                    border-radius: 20px;
+                    padding: 5px 12px;
+                    font-size: 13px;
+                    font-weight: bold;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                ">
+                    💚 Made by Yusuf
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- watsup icon on screen -->
+<a href="https://wa.me/917050028588?text=Hello%20Yusuf!%20I%20want%20to%20order%20from%20your%20ice%20cream%20shop." 
+     class="whatsapp-float" target="_blank">
+     <i class="fab fa-whatsapp"></i>
+  </a>
+
+  </body>
+</html>

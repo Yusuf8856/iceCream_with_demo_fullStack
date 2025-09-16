@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock title %}
+
+{% block style %}
+<style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff8f0;
+        }
+        .banner {
+            background: linear-gradient(to right, #ffe0ec, #fff8f0);
+            padding: 60px 30px;
+            text-align: center;
+        }
+        .banner h1 {
+            color: #ff6f91;
+            font-weight: bold;
+            font-size: 48px;
+        }
+        .section {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 30px;
+            margin-top: 40px;
+        }
+        .section h2 {
+            color: #ff6f91;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .highlight-box {
+            background-color: #ffe4ec;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .features .col-md-4 {
+            margin-bottom: 20px;
+        }
+        .feature-card {
+            background-color: #fff0f4;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .feature-card h5 {
+            color: #ff6f91;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .feature-card img {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+{% endblock style %}
+
+{% block body %}
+
+<div class="banner">
+    <h1>About Us</h1>
+    <p class="lead mt-3">Serving smiles with every scoop 🍨</p>
+</div>
+
+<div class="container">
+
+    <!-- Our Story -->
+    <div class="section">
+        <h2>Our Sweet Story</h2>
+        <p>
+            Welcome to <strong>Scooplicious</strong>, where happiness is homemade! Our journey started with one simple idea: ice cream should bring joy, fun, and flavor to everyone. From our small kitchen in Bangalore to now serving thousands of customers, we’ve never lost our passion for creating creamy, dreamy desserts that spark smiles.
+        </p>
+
+        <div class="highlight-box">
+            “Life is like ice cream — enjoy it before it melts!”
+        </div>
+    </div>
+
+    <!-- Features / Why Choose Us -->
+    <div class="section">
+        <h2>Why Choose Us?</h2>
+        <div class="row features">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <img src="/static/premium.jpeg" alt="Quality">
+                    <h5>Premium Quality</h5>
+                    <p>Made with the freshest ingredients, no shortcuts, and no compromises.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <img src="https://img.icons8.com/color/96/heart-with-arrow.png" alt="Love">
+                    <h5>Made with Love</h5>
+                    <p>Every batch is handmade and tested by our passionate dessert chefs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <img src="/static/fun.jpeg" alt="Fun">
+                    <h5>Fun & Friendly</h5>
+                    <p>Bright store vibes, colorful cones, and a cheerful team always ready to serve.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock body %}

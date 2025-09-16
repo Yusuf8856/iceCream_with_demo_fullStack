@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Cakes{% endblock title %}
+
+{% block style %}
+<style>
+    body {
+        background-color: #f1cca2;
+        font-family: 'Poppins', sans-serif;
+    }
+    h2 {
+        color: #ff6f91;
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-size: 3rem;
+    }
+    .cake-card {
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 15px;
+        margin-bottom: 25px;
+        transition: transform 0.3s ease;
+        text-align: center;
+    }
+    .cake-card:hover {
+        transform: translateY(-5px);
+    }
+    .cake-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+    .cake-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ff6f91;
+    }
+    .cake-price {
+        color: #444;
+        margin: 8px 0;
+        font-size: 15px;
+    }
+    .order-btn {
+        display: inline-block;
+        background-color: #25d366; /* WhatsApp green */
+        color: white;
+        padding: 8px 16px;
+        border-radius: 25px;
+        font-size: 14px;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+    .order-btn:hover {
+        background-color: #128c7e;
+    }
+    .testimonial {
+    background: #ffebf0;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+  }
+</style>
+{% endblock style %}
+
+{% block body %}
+<div class="container mt-5">
+    <h2 class="text-center">Our Cakes</h2>
+    <div class="row">
+
+        <!-- Cake 1 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/blackForest.jpeg' %}" alt="Black Forest Cake">
+                <div class="cake-title">Black Forest</div>
+                <div class="cake-price">₹450</div>
+                <a href="/contact/?item=Black Forest Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 2 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/whiteForest.jpeg' %}" alt="White Forest Cake">
+                <div class="cake-title">White Forest</div>
+                <div class="cake-price">₹500</div>
+                <a href="/contact/?item=White Forest Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 3 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/chocolate.jpeg' %}" alt="Chocolate Truffle Cake">
+                <div class="cake-title">Chocolate Truffle</div>
+                <div class="cake-price">₹600</div>
+                <a href="/contact/?item=Chocolate Truffle Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 4 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/redVelvet.jpeg' %}" alt="Red Velvet Cake">
+                <div class="cake-title">Red Velvet</div>
+                <div class="cake-price">₹650</div>
+                <a href="/contact/?item=Red Velvet Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 5 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/blueberry.jpeg' %}" alt="Blueberry Cake">
+                <div class="cake-title">Blueberry</div>
+                <div class="cake-price">₹700</div>
+                <a href="/contact/?item=Blueberry Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 6 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/strawberry.jpeg' %}" alt="Strawberry Cake">
+                <div class="cake-title">Strawberry</div>
+                <div class="cake-price">₹550</div>
+                <a href="/contact/?item=Strawberry Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 7 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/mango.jpeg' %}" alt="Mango Cake">
+                <div class="cake-title">Mango</div>
+                <div class="cake-price">₹500</div>
+                <a href="/contact/?item=Mango Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 8 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/pineapple.jpeg' %}" alt="Pineapple Cake">
+                <div class="cake-title">Pineapple</div>
+                <div class="cake-price">₹480</div>
+                <a href="/contact/?item=Pineapple Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 9 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/oreo.jpeg' %}" alt="Oreo Cake">
+                <div class="cake-title">Oreo</div>
+                <div class="cake-price">₹750</div>
+                <a href="/contact/?item=Oreo Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 10 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/kitkat.jpeg' %}" alt="KitKat Cake">
+                <div class="cake-title">KitKat</div>
+                <div class="cake-price">₹800</div>
+                <a href="/contact/?item=KitKat Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 11 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/rasmalai.jpeg' %}" alt="Rasmalai Cake">
+                <div class="cake-title">Rasmalai</div>
+                <div class="cake-price">₹850</div>
+                <a href="/contact/?item=Rasmalai Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Cake 12 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="cake-card">
+                <img src="{% static 'cake/ferrero.jpeg' %}" alt="Ferrero Rocher Cake">
+                <div class="cake-title">Ferrero Rocher</div>
+                <div class="cake-price">₹950</div>
+                <a href="/contact/?item=Ferrero Rocher Cake" class="order-btn">Order Now</a>
+            </div>
+        </div>
+        <!-- Testimonial -->
+  <div class="testimonial text-center">
+    <h4>💖 What Our Customers Say</h4>
+    <p>
+      "The Chocolate Overload cake was the highlight of my birthday party! Rich,
+      creamy, and absolutely delicious. Best ice cream cakes in town!"
+    </p>
+    <strong>- A Happy Customer</strong>
+  </div>
+
+    </div>
+</div>
+{% endblock body %}
