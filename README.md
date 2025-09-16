@@ -20,7 +20,6 @@ This project is built to demonstrate a **modern responsive design** with multipl
 ---
 
 ## 📂 Project Structure
-## 📂 Project Structure
 
 yusuficecream/             # Main Django Project Root
 │── hello/                 # Project settings folder
