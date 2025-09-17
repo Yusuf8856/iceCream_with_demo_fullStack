@@ -45,3 +45,16 @@ yusuficecream/             # Main Django Project Root
 │── manage.py              # Django management script
 │── requirements.txt       # Project dependencies
 │── README.md              # Project documentation
+
+## 🛠️ Tech Stack
+- Django 5
+- Bootstrap 5
+- SQLite3
+- HTML, CSS, JS
+
+## ▶️ Run Locally
+```bash
+git clone https://github.com/Yusuf8856/iceCream_with_demo_fullStack.git
+cd icecream-shop
+pip install -r requirements.txt
+python manage.py runserver
