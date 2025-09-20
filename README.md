@@ -19,6 +19,11 @@ This project is built to demonstrate a **modern responsive design** with multipl
 
 ---
 
+## 🎥 Demo Video
+
+https://github.com/user-attachments/assets/a392ca61-54a7-4c3b-958f-b371120b73e7
+
+
 ## 📂 Project Structure
 
 yusuficecream/             # Main Django Project Root
