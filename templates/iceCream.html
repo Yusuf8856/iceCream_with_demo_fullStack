@@ -1,64 +1,8 @@
 {% extends "base.html" %} {% block title %}Ice Creams{% endblock title %}
 {%block style %}{% load static %}
-<style>
-  body {
-    background-color: hsla(261, 78%, 73%, 0.776);
-    font-family: "Poppins", sans-serif;
-  }
-  h2 {
-    color: #ead596;
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 3rem;
-  }
-  .icecream-card {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  .icecream-card:hover {
-    transform: scale(1.05);
-  }
-  .icecream-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  .icecream-details {
-    padding: 15px;
-    text-align: center;
-  }
-  .icecream-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ff9800;
-    margin-bottom: 10px;
-  }
-  .icecream-price {
-    font-size: 18px;
-    color: #444;
-    margin-bottom: 15px;
-  }
-  .order-btn {
-    background: #ff9800;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-  .order-btn:hover {
-    background: #e68900;
-  }
-  .testimonial {
-    background: #ffebf0;
-    padding: 30px;
-    border-radius: 15px;
-    margin-top: 50px;
-  }
-</style>
+
+<link rel="stylesheet" href="{% static 'css/iceCream_style.css' %}">
+
 {% endblock style %} {% block body %}
 <div class="container mt-5">
   <h2 class="text-center">Our Ice Cream Specials</h2>

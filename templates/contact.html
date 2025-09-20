@@ -1,39 +1,10 @@
 {% extends "base.html" %}
 
 {% block style %}
-<style>
-    body {
-        background-color: #fff8f0;
-        font-family: 'Poppins', sans-serif;
-    }
+{% load static %}
 
-    h2, h4, h5 {
-        color: #ff6f91;
-        font-weight: bold;
-    }
+<link rel="stylesheet" href="{% static 'css/contact_style.css' %}">
 
-    .btn-primary {
-        background-color: #ff6f91;
-        border: none;
-        font-weight: bold;
-    }
-
-    .btn-primary:hover {
-        background-color: #ff4e78;
-    }
-
-    .form-label {
-        color: #333;
-    }
-
-    .card-title {
-        color: #ff6f91;
-    }
-
-    iframe {
-        border-radius: 15px;
-    }
-</style>
 {% endblock style %}
 
 {% block title %}Contact{% endblock title %}

@@ -3,30 +3,10 @@
 {% block title %}Home{% endblock title %}
 
 {% block style %}
-<style>
-  .btn-ice {
-    background-color: #ff6f91;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-  }
+{% load static %}
 
-  .btn-ice:hover {
-    background-color: #ff4f7c;
-  }
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-  .text-pink {
-    color: #ff6f91;
-  }
-
-  .text-purple {
-    color: #c084fc;
-  }
-
-</style>
 
 {% endblock style %}
 
@@ -82,7 +62,7 @@
     <!-- CARD 1 -->
     <div class="col">
       <div class="card shadow-sm border-0 rounded-4" style="background-color:#fff0f4;">
-        <img src="/static/1.jpeg" class="card-img-top rounded-top-4" height="230" alt="Mango Mania">
+       <img src="{% static 'index/1.jpeg' %}" class="card-img-top rounded-top-4" height="230" alt="Mango Mania">
         <div class="card-body text-center">
           <h5 class="text-danger fw-bold">Mango Mania</h5>
           <p class="card-text">Tropical mangoes blended into creamy perfection.</p>
@@ -94,7 +74,7 @@
     <!-- CARD 2 -->
     <div class="col">
       <div class="card shadow-sm border-0 rounded-4" style="background-color:#fef6e4;">
-        <img src="/static/2.jpeg" class="card-img-top rounded-top-4" height="230" alt="Strawberry Spark">
+        <img src="{% static 'index/2.jpeg' %}" class="card-img-top rounded-top-4" height="230" alt="Strawberry Spark">
         <div class="card-body text-center">
           <h5 class="text-pink fw-bold">Strawberry Spark</h5>
           <p class="card-text">Sweet strawberry swirls with frozen cream clouds.</p>
@@ -106,7 +86,7 @@
     <!-- CARD 3 -->
     <div class="col">
       <div class="card shadow-sm border-0 rounded-4" style="background-color:#f0faff;">
-        <img src="/static/3.jpeg" class="card-img-top rounded-top-4" height="230" alt="Blueberry Bliss">
+        <img src="{% static 'index/3.jpeg' %}" class="card-img-top rounded-top-4" height="230" alt="Blueberry Bliss">
         <div class="card-body text-center">
           <h5 class="text-primary fw-bold">Blueberry Bliss</h5>
           <p class="card-text">Tangy blueberries in every chilly scoop.</p>
@@ -118,7 +98,7 @@
     <!-- CARD 4 -->
     <div class="col">
       <div class="card shadow-sm border-0 rounded-4" style="background-color:#fffce8;">
-        <img src="/static/4.jpeg" class="card-img-top rounded-top-4" height="230" alt="Vanilla Velvet">
+        <img src="{% static 'index/4.jpeg' %}" class="card-img-top rounded-top-4" height="230" alt="Vanilla Velvet">
         <div class="card-body text-center">
           <h5 class="text-warning fw-bold">Vanilla Velvet</h5>
           <p class="card-text">Classic vanilla reimagined with a silky twist.</p>
@@ -130,7 +110,7 @@
     <!-- CARD 5 -->
     <div class="col">
       <div class="card shadow-sm border-0 rounded-4" style="background-color:#f0f0ff;">
-        <img src="/static/5.jpeg" class="card-img-top rounded-top-4" height="230" alt="Choco Chunk">
+        <img src="{% static 'index/5.jpeg' %}" class="card-img-top rounded-top-4" height="230" alt="Choco Chunk">
         <div class="card-body text-center">
           <h5 class="text-dark fw-bold">Choco Chunk</h5>
           <p class="card-text">Loaded with chocolate fudge and brownie bits!</p>
@@ -142,7 +122,7 @@
     <!-- CARD 6 -->
     <div class="col">
       <div class="card shadow-sm border-0 rounded-4" style="background-color:#e8fff1;">
-        <img src="/static/6.jpeg" class="card-img-top rounded-top-4" height="230" alt="Minty Mellow">
+        <img src="{% static 'index/6.jpeg' %}" class="card-img-top rounded-top-4" height="230" alt="Minty Mellow">
         <div class="card-body text-center">
           <h5 class="text-success fw-bold">Minty Mellow</h5>
           <p class="card-text">Cool mint meets soft chocolate chips in harmony.</p>
@@ -154,7 +134,7 @@
     <!-- CARD 7 -->
     <div class="col">
       <div class="card shadow-sm border-0 rounded-4" style="background-color:#fff5f0;">
-        <img src="/static/7.jpeg" class="card-img-top rounded-top-4" height="230" alt="Rose Cream">
+        <img src="{% static 'index/7.jpeg' %}" class="card-img-top rounded-top-4" height="230" alt="Rose Cream">
         <div class="card-body text-center">
           <h5 class="text-danger fw-bold">Rose Cream</h5>
           <p class="card-text">Delicate rose flavor in smooth milky magic.</p>
@@ -166,7 +146,7 @@
     <!-- CARD 8 -->
     <div class="col">
       <div class="card shadow-sm border-0 rounded-4" style="background-color:#fef0ff;">
-        <img src="/static/8.jpeg" class="card-img-top rounded-top-4" height="230" alt="Purple Dream">
+        <img src="{% static 'index/8.jpeg' %}" class="card-img-top rounded-top-4" height="230" alt="Purple Dream">
         <div class="card-body text-center">
           <h5 class="text-purple fw-bold">Purple Dream</h5>
           <p class="card-text">Grape-inspired delight for dreamy bites.</p>
@@ -178,7 +158,7 @@
     <!-- CARD 9 -->
     <div class="col">
       <div class="card shadow-sm border-0 rounded-4" style="background-color:#e0ffff;">
-        <img src="/static/9.jpeg" class="card-img-top rounded-top-4" height="230" alt="Cotton Candy">
+        <img src="{% static 'index/9.jpeg' %}" class="card-img-top rounded-top-4" height="230" alt="Cotton Candy">
         <div class="card-body text-center">
           <h5 class="text-info fw-bold">Cotton Candy</h5>
           <p class="card-text">Fluffy, sweet and fun – tastes like childhood!</p>

@@ -1,0 +1,32 @@
+
+    body {
+        background-color: #fff8f0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h2, h4, h5 {
+        color: #ff6f91;
+        font-weight: bold;
+    }
+
+    .btn-primary {
+        background-color: #ff6f91;
+        border: none;
+        font-weight: bold;
+    }
+
+    .btn-primary:hover {
+        background-color: #ff4e78;
+    }
+
+    .form-label {
+        color: #333;
+    }
+
+    .card-title {
+        color: #ff6f91;
+    }
+
+    iframe {
+        border-radius: 15px;
+    }

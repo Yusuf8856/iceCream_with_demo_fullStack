@@ -1,0 +1,53 @@
+body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff8f0;
+        }
+        .banner {
+            background: linear-gradient(to right, #ffe0ec, #fff8f0);
+            padding: 60px 30px;
+            text-align: center;
+        }
+        .banner h1 {
+            color: #ff6f91;
+            font-weight: bold;
+            font-size: 48px;
+        }
+        .section {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 30px;
+            margin-top: 40px;
+        }
+        .section h2 {
+            color: #ff6f91;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .highlight-box {
+            background-color: #ffe4ec;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .features .col-md-4 {
+            margin-bottom: 20px;
+        }
+        .feature-card {
+            background-color: #fff0f4;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .feature-card h5 {
+            color: #ff6f91;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .feature-card img {
+            width: 60px;
+            height: 60px;
+        }

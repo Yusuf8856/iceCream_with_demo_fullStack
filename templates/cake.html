@@ -4,66 +4,7 @@
 {% block title %}Cakes{% endblock title %}
 
 {% block style %}
-<style>
-    body {
-        background-color: #f1cca2;
-        font-family: 'Poppins', sans-serif;
-    }
-    h2 {
-        color: #ff6f91;
-        font-weight: bold;
-        margin-bottom: 30px;
-        font-size: 3rem;
-    }
-    .cake-card {
-        background: #ffffff;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        padding: 15px;
-        margin-bottom: 25px;
-        transition: transform 0.3s ease;
-        text-align: center;
-    }
-    .cake-card:hover {
-        transform: translateY(-5px);
-    }
-    .cake-card img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 12px;
-        margin-bottom: 10px;
-    }
-    .cake-title {
-        font-size: 18px;
-        font-weight: bold;
-        color: #ff6f91;
-    }
-    .cake-price {
-        color: #444;
-        margin: 8px 0;
-        font-size: 15px;
-    }
-    .order-btn {
-        display: inline-block;
-        background-color: #25d366; /* WhatsApp green */
-        color: white;
-        padding: 8px 16px;
-        border-radius: 25px;
-        font-size: 14px;
-        text-decoration: none;
-        transition: background 0.3s;
-    }
-    .order-btn:hover {
-        background-color: #128c7e;
-    }
-    .testimonial {
-    background: #ffebf0;
-    padding: 30px;
-    border-radius: 15px;
-    margin-top: 50px;
-  }
-</style>
+<link rel="stylesheet" href="{% static 'css/Cake_style.css' %}">
 {% endblock style %}
 
 {% block body %}
