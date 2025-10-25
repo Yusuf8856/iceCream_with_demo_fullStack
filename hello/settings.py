@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ocpue*9m5&6(j-dvyfzo$qa*v%4v&3s=v)sh456=v*&$r@*cr+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ice-cream-wala.onrender.com', 'localhost', '127.0.0.1']  # add render server link
 
 
 # Application definition
