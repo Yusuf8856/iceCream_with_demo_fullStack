@@ -5,6 +5,8 @@ This project is built to demonstrate a **modern responsive design** with multipl
 
 ---
 
+## 🚀 Live Demo ** https://ice-cream-wala.onrender.com/
+---
 ## 🚀 Features
 - ✅ Home page with modern UI/UX  
 - ✅ About page with attractive thumbnails  
